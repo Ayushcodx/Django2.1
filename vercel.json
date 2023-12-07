@@ -7,7 +7,7 @@
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "djangochat/asgi.py"
+            "dest": "djangochat/wsgi.py"
         }
     ]
 }
