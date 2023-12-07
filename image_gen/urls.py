@@ -7,5 +7,4 @@ from image_gen.views import generate_image_home
 urlpatterns = [
     path('', generate_image_home, name='generate_img'),
 ]
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
